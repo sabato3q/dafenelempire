@@ -1,1 +1,154 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Testimonials | Dafenel's Herbal Tea</title><link rel="stylesheet" href="styles.css"></head><body><header class="topbar"><div class="nav-wrap"><a class="brand" href="index.html"><img src="assets/logo-transparent.png" alt="Dafenel's Empire"></a><nav class="nav-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="benefits.html">Benefits</a><a href="testimonials.html">Testimonials</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="cart-btn" href="shop.html">🛒 <span>Cart</span> <b>0</b></a></div></header><main><section class="inner-section"><div class="section-heading"><div class="eyebrow">TESTIMONIALS</div><h2>What Our Customers Say</h2><div class="heading-line"></div></div><div id="testimonialGrid" class="testimonial-grid"><p class="empty">Loading testimonials...</p></div></section></main><footer><img src="logo-transparent.png" alt="Dafenel's Empire"><p><strong>Location:</strong> Kumasi, Daban Newsite</p><p><strong>WhatsApp:</strong> <a href="https://wa.me/233596502626">0596502626</a></p><p><strong>Calls:</strong> <a href="tel:0500922299">0500922299</a> · <a href="tel:0244941097">0244941097</a></p><p><strong>TikTok:</strong> Magical tea · <strong>Facebook:</strong> Dafenel's Herbal Tea</p><p>© <span id="year"></span> Dafenel's Empire. All rights reserved.</p><p><a href="admin.html">Admin Dashboard</a></p></footer><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="script.js"></script><script src="site.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Testimonials | Dafenel's Herbal Tea</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="nav-wrap">
+
+    <a class="brand" href="index.html">
+      <img src="logo-transparent.png" alt="Dafenel's Empire">
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a class="cart-btn" href="shop.html">
+      🛒 <span>Cart</span> <b id="cartCount">0</b>
+    </a>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="inner-section dark-page">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">TESTIMONIALS</div>
+
+      <h2>What Our Customers Say</h2>
+
+      <div class="heading-line"></div>
+
+      <p>
+        Hear from customers who have experienced Dafenel's Herbal Tea.
+      </p>
+
+    </div>
+
+    <div id="testimonialGrid" class="testimonial-grid">
+
+      <p class="empty">
+        Loading testimonials...
+      </p>
+
+    </div>
+
+    <div class="review-note">
+      <p>
+        Have you tried Dafenel's Herbal Tea?
+      </p>
+
+      <button
+        class="add-order centered-btn"
+        onclick="document.getElementById('reviewForm').classList.toggle('hidden')">
+        Leave a Testimonial
+      </button>
+    </div>
+
+    <div id="reviewForm" class="hidden" style="max-width:650px;margin:30px auto;">
+
+      <form id="testimonialForm"
+            style="background:#fff;padding:25px;border-radius:16px;color:#29150c;">
+
+        <h3>Share Your Experience</h3>
+
+        <label>
+          Your Name
+          <input
+            id="customerName"
+            type="text"
+            placeholder="Enter your name"
+            required>
+        </label>
+
+        <label>
+          Your Testimonial
+          <textarea
+            id="testimonialText"
+            rows="5"
+            placeholder="Tell us about your experience..."
+            required></textarea>
+        </label>
+
+        <button type="submit" class="add-order">
+          Submit Testimonial
+        </button>
+
+        <p id="reviewMessage"></p>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <img src="logo-transparent.png" alt="Dafenel's Empire">
+
+  <p>
+    <strong>Location:</strong> Kumasi, Daban Newsite
+  </p>
+
+  <p>
+    <strong>WhatsApp:</strong>
+    <a href="https://wa.me/233596502626">0596502626</a>
+  </p>
+
+  <p>
+    <strong>Calls:</strong>
+    <a href="tel:0500922299">0500922299</a>
+    ·
+    <a href="tel:0244941097">0244941097</a>
+  </p>
+
+  <p>
+    <strong>TikTok:</strong> Magical tea
+    ·
+    <strong>Facebook:</strong> Dafenel's Herbal Tea
+  </p>
+
+  <p>
+    © <span id="year"></span> Dafenel's Empire. All rights reserved.
+  </p>
+
+  <p>
+    <a href="admin.html">Admin Dashboard</a>
+  </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="script.js"></script>
+<script src="site.js"></script>
+
+</body>
+</html>
